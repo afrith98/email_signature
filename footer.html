@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Skewed Footer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .contact-card {
+        display: flex;
+        color: #000;
+      }
+      .contact-info {
+        align-self: flex-start;
+        display: flex;
+        margin-left: 20px;
+        text-justify: auto;
+      }
+      .personal-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        line-height: 1.2px;
+        margin-bottom: 10px; /* Reduced margin */
+      }
+      .name-title {
+        font: 600 20px/15px Rubik, sans-serif;
+        font-feature-settings: "clig" off, "liga" off;
+        margin-bottom: 12px; /* Reduced margin */
+      }
+      .contact-item {
+        display: flex;
+        gap: 9px;
+        margin-bottom: 5px; /* Reduced margin */
+      }
+      .icon {
+        aspect-ratio: 1;
+        width: 14px;
+      }
+      .contact-text {
+        font-family: Rubik, sans-serif;
+        font-feature-settings: "clig" off, "liga" off;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 2px; /* Reduced margin */
+      }
+      .email-icon {
+        aspect-ratio: 1.41;
+        width: 14px;
+        fill: #000;
+      }
+      .address-container {
+        display: flex;
+        margin-top: 2px;
+        gap: 6px;
+        text-align: justify;
+        line-height: 1.2px;
+      }
+      .address-icon {
+        aspect-ratio: 0.93;
+        width: 18px;
+      }
+      .logo {
+        width: 131px;
+        max-width: 100%;
+        margin-right: 20px;
+      }
+      .footer-wrapper {
+        background-color: #bd5744;
+        margin-top: 5px;
+      }
+      .footer {
+        background-color: #384e58;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: skew(-40deg);
+      }
+      .footer a {
+        color: #fff;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        transform: skew(40deg);
+        text-decoration: underline;
+      }
+      .social-icons {
+        display: flex;
+        align-items: center;
+      }
+      .social-icons a {
+        margin-left: 15px;
+        transform: skew(40deg);
+      }
+      .social-icons i {
+        font-size: 18px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-email">
+      <div class="header">
+        <div class="personal-details">
+          <h2 class="name-title">John Doe | Web Developer</h2>
+          <div class="contact-item">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc300ad6bcfebf5905f0f820daf725c089c97ff0966f12f8e6c11f13920ad1ad?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
+              alt="Phone icon"
+              class="icon"
+            />
+            <p class="contact-text">+94775387845 | +94 67 31 21 859</p>
+          </div>
+          <div class="contact-item">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/00df3b26aca7d7c1df0f3e98e86d8991778a44ae2d56ee09447b3a229e549e08?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
+              alt="Email icon"
+              class="icon email-icon"
+            />
+            <p class="contact-text">john@alphatsm.com</p>
+          </div>
+          <div class="address-container">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b6315f5353f605b8440598fce4bf0974e33aebfacc4f58b6b30147fe54f7f65?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
+              alt="Location icon"
+              class="icon address-icon"
+            />
+            <p class="contact-text">
+              Alpha Health Consultancy, Alpha Business Complex, <br />
+              Main Street Maruthamunai 02, Kalmunai, Sri Lanka
+            </p>
+          </div>
+        </div>
+        <img src="CB Logo.png" alt="Logo" class="logo" />
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer">
+          <a href="https://www.charteredbureau.lk">www.charteredbureau.lk</a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.whatsapp.com" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.twitter.com" aria-label="X">
+              <i class="fab fa-x"></i>
+            </a>
+            <a href="https://www.linkedin.com" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
