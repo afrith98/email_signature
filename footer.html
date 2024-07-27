@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <title>Skewed Footer</title>
+    <title>CBA email signature</title>
     <style>
       body {
         margin: 0;
@@ -15,74 +11,33 @@
         background-color: #f5f5f5;
         font-family: Arial, sans-serif;
       }
-      .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      table {
+        width: 100%;
+        border-collapse: collapse;
       }
-      .contact-card {
-        display: flex;
-        color: #000;
+      td {
+        padding: 2px;
+        margin-bottom: 5px;
       }
-      .contact-info {
-        align-self: flex-start;
-        display: flex;
-        margin-left: 20px;
-        text-justify: auto;
+      .header-table {
+        width: 100%;
+        border: none;
       }
-      .personal-details {
-        display: flex;
-        flex-direction: column;
-        margin-left: 20px;
-        line-height: 1.2px;
-        margin-bottom: 10px; /* Reduced margin */
-      }
-      .name-title {
-        font: 600 20px/15px Rubik, sans-serif;
-        font-feature-settings: "clig" off, "liga" off;
-        margin-bottom: 12px; /* Reduced margin */
-      }
-      .contact-item {
-        display: flex;
-        gap: 9px;
-        margin-bottom: 5px; /* Reduced margin */
-      }
+
       .icon {
         aspect-ratio: 1;
         width: 14px;
+        margin-right: 10px;
       }
-      .contact-text {
-        font-family: Rubik, sans-serif;
-        font-feature-settings: "clig" off, "liga" off;
-        font-size: 14px;
-        line-height: 14px;
-        margin: 2px; /* Reduced margin */
-      }
-      .email-icon {
-        aspect-ratio: 1.41;
-        width: 16px;
-        fill: #000;
-      }
-      .address-container {
-        display: flex;
-        margin-top: 2px;
-        gap: 6px;
-        text-align: justify;
-        line-height: 1.2px;
-      }
-      .address-icon {
-        aspect-ratio: 0.93;
-        width: 18px;
-      }
+
       .logo {
         width: 130px;
         max-width: 100%;
         margin-right: 20px;
-        margin-top: 5px;
+        margin-top: 20px;
       }
       .footer-wrapper {
         background-color: #bd5744;
-        margin-top: 5px;
       }
       .footer {
         background-color: #384e58;
@@ -111,69 +66,179 @@
         margin-left: 15px;
         transform: skew(40deg);
       }
-      .social-icons i {
-        font-size: 18px;
-        color: #fff;
+      .social-icons svg {
+        width: 18px;
+        height: 18px;
+        fill: #fff;
       }
     </style>
   </head>
   <body>
-    <div class="container-email">
-      <div class="header">
-        <div class="personal-details">
-          <h2 class="name-title">John Doe | Web Developer</h2>
-          <div class="contact-item">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc300ad6bcfebf5905f0f820daf725c089c97ff0966f12f8e6c11f13920ad1ad?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
-              alt="Phone icon"
-              class="icon"
-            />
-            <p class="contact-text">+94775387845 | +94 67 31 21 859</p>
-          </div>
-          <div class="contact-item">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/00df3b26aca7d7c1df0f3e98e86d8991778a44ae2d56ee09447b3a229e549e08?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
-              alt="Email icon"
-              class="icon email-icon"
-            />
-            <p class="contact-text">john@alphatsm.com</p>
-          </div>
-          <div class="address-container">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b6315f5353f605b8440598fce4bf0974e33aebfacc4f58b6b30147fe54f7f65?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
-              alt="Location icon"
-              class="icon address-icon"
-            />
-            <p class="contact-text">
-              Alpha Health Consultancy, Alpha Business Complex, <br />
-              Main Street Maruthamunai 02, Kalmunai, Sri Lanka
-            </p>
-          </div>
-        </div>
-        <img src="CB Logo.png" alt="Logo" class="logo" />
-      </div>
-      <div class="footer-wrapper">
-        <div class="footer">
-          <a href="https://www.charteredbureau.lk">www.charteredbureau.lk</a>
-          <div class="social-icons">
-            <a href="https://www.facebook.com" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.instagram.com" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.whatsapp.com" aria-label="WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.twitter.com" aria-label="X">
-              <i class="fab fa-x"></i>
-            </a>
-            <a href="https://www.linkedin.com" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+    <table class="header-table">
+      <tr>
+        <td style="width: 70%; vertical-align: top">
+          <table>
+            <tr>
+              <td>
+                <h2
+                  style="
+                    font: 600 20px Rubik, sans-serif;
+                    margin-bottom: 12px;
+                    margin-left: 30px;
+                  "
+                >
+                  John Doe | Web Developer
+                </h2>
+                <table>
+                  <tr>
+                    <td>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          gap: 10px;
+                          margin-left: 30px;
+                        "
+                      >
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc300ad6bcfebf5905f0f820daf725c089c97ff0966f12f8e6c11f13920ad1ad?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
+                          alt="Phone icon"
+                          class="icon"
+                          style="
+                            margin-right: 10px;
+                            aspect-ratio: 1;
+                            width: 14px;
+                            margin-right: 10px;
+                          "
+                        />
+                        <span style="font-size: 14px"
+                          >+94775387845 | +94 67 31 21 859</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          margin-left: 30px;
+                        "
+                      >
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/00df3b26aca7d7c1df0f3e98e86d8991778a44ae2d56ee09447b3a229e549e08?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
+                          alt="Email icon"
+                          class="icon email-icon"
+                          style="
+                            margin-right: 10px;
+                            margin-top: 10px;
+                            aspect-ratio: 1.41;
+                            width: 14px;
+                            fill: #000;
+                          "
+                        />
+                        <span
+                          style="
+                            font-size: 14px;
+                            gap: 10px;
+                            margin-left: 10px;
+                            margin-top: 5px;
+                          "
+                          >john@alphatsm.com</span
+                        >
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div style="display: flex; align-items: center">
+                        <img
+                          src="https://cdn.builder.io/api/v1/image/assets/TEMP/3b6315f5353f605b8440598fce4bf0974e33aebfacc4f58b6b30147fe54f7f65?apiKey=58a66aa9f1f846c881673435483ea243&&apiKey=58a66aa9f1f846c881673435483ea243"
+                          alt="Location icon"
+                          class="icon address-icon"
+                          style="margin-left: 25px; width: 18px; fill: #000"
+                        />
+                        <span
+                          style="
+                            font-size: 14px;
+                            gap: 10px;
+                            margin-left: 10px;
+                            margin-top: 5px;
+                          "
+                        >
+                          Alpha Health Consultancy, Alpha Business Complex,
+                          <br />
+                          Main Street Maruthamunai 02, Kalmunai, Sri Lanka
+                        </span>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td style="vertical-align: top; text-align: right">
+          <img src="CB Logo.png" alt="Logo" class="logo" />
+        </td>
+      </tr>
+    </table>
+    <div class="footer-wrapper">
+      <table>
+        <tr>
+          <td>
+            <div class="footer">
+              <a href="https://www.charteredbureau.lk"
+                >www.charteredbureau.lk</a
+              >
+              <div class="social-icons">
+                <a href="https://www.facebook.com" aria-label="Facebook">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M22.675 0h-21.35C.596 0 0 .592 0 1.318v21.364C0 23.408.596 24 1.325 24h11.502V14.709h-3.13v-3.671h3.13V8.553c0-3.1 1.892-4.788 4.659-4.788 1.325 0 2.463.098 2.796.142v3.24l-1.919.001c-1.505 0-1.797.715-1.797 1.764v2.31h3.587l-.467 3.67h-3.12V24h6.116C23.404 24 24 23.408 24 22.682V1.318C24 .592 23.404 0 22.675 0z"
+                    />
+                  </svg>
+                </a>
+                <a href="https://www.instagram.com" aria-label="Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.336 3.608 1.311.974.974 1.248 2.241 1.311 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.336 2.633-1.311 3.608-.974.974-2.241 1.248-3.608 1.311-1.265.058-1.645.07-4.849.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.336-3.608-1.311-.974-.974-1.248-2.241-1.311-3.608-.058-1.265-.07-1.645-.07-4.849s.012-3.584.07-4.849c.062-1.366.336-2.633 1.311-3.608.974-.974 2.241-1.248 3.608-1.311 1.265-.058 1.645-.07 4.849-.07zm0-2.163C8.741 0 8.332.014 7.053.072 5.775.13 4.556.325 3.445 1.436 2.334 2.546 2.139 3.765 2.081 5.044 2.023 6.323 2.009 6.732 2.009 12s.014 5.677.072 6.956c.058 1.279.253 2.498 1.364 3.608 1.111 1.111 2.33 1.306 3.608 1.364 1.279.058 1.688.072 6.956.072s5.677-.014 6.956-.072c1.279-.058 2.498-.253 3.608-1.364 1.111-1.111 1.306-2.33 1.364-3.608.058-1.279.072-1.688.072-6.956s-.014-5.677-.072-6.956c-.058-1.279-.253-2.498-1.364-3.608C20.502.325 19.283.13 18.004.072 16.725.014 16.316 0 12 0z"
+                    />
+                    <path
+                      d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162S8.597 18.162 12 18.162 18.162 15.403 18.162 12 15.403 5.838 12 5.838zm0 10.123c-2.186 0-3.961-1.775-3.961-3.961S9.814 8.038 12 8.038s3.961 1.775 3.961 3.961-1.775 3.962-3.961 3.962z"
+                    />
+                    <path
+                      d="M18.406 4.594c-.796 0-1.441.645-1.441 1.441s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.441-1.441-1.441z"
+                    />
+                  </svg>
+                </a>
+                <a href="https://www.whatsapp.com" aria-label="WhatsApp">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                    <path
+                      d="M16.038 2.003c-7.741 0-14.02 6.28-14.02 14.02 0 2.475.646 4.881 1.874 7.006L2 30.003l6.99-1.864c2.077 1.186 4.438 1.814 6.98 1.814 7.742 0 14.02-6.279 14.02-14.019s-6.278-14.02-14.02-14.02zm0 25.26c-2.304 0-4.554-.635-6.52-1.84l-.466-.28-4.144 1.104 1.107-4.058-.293-.487a11.999 11.999 0 0 1-1.818-6.486c0-6.63 5.392-12.021 12.02-12.021 6.63 0 12.02 5.392 12.02 12.021 0 6.628-5.392 12.02-12.02 12.02zm6.543-9.017c-.357-.178-2.108-1.045-2.435-1.16-.327-.119-.566-.178-.804.18-.238.356-.924 1.161-1.132 1.4-.208.238-.416.267-.774.089-.357-.179-1.509-.556-2.875-1.778-1.064-.948-1.779-2.122-1.987-2.48-.208-.357-.022-.55.156-.728.161-.16.357-.416.536-.624.179-.208.238-.356.357-.594.119-.238.06-.446-.03-.624-.089-.178-.804-1.935-1.102-2.646-.298-.711-.602-.61-.804-.622-.208-.012-.446-.014-.684-.014s-.624.089-.951.446c-.327.356-1.25 1.221-1.25 2.982s1.28 3.453 1.457 3.69c.179.238 2.521 3.854 6.104 5.402.854.37 1.518.59 2.037.756.856.271 1.636.234 2.248.142.686-.102 2.108-.86 2.407-1.691.298-.831.298-1.543.208-1.691-.089-.148-.327-.237-.684-.415z"
+                    />
+                  </svg>
+                </a>
+                <a href="https://www.twitter.com" aria-label="X">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M24 4.557a9.825 9.825 0 0 1-2.828.775 4.93 4.93 0 0 0 2.165-2.724 9.835 9.835 0 0 1-3.127 1.195A4.92 4.92 0 0 0 16.616 3c-2.736 0-4.947 2.225-4.947 4.973 0 .39.043.77.127 1.134C7.69 8.946 4.066 7.09 1.64 4.149a4.93 4.93 0 0 0-.668 2.5c0 1.723.876 3.244 2.208 4.137a4.922 4.922 0 0 1-2.24-.62v.063c0 2.403 1.708 4.409 3.974 4.863a4.92 4.92 0 0 1-2.235.085c.629 1.968 2.448 3.397 4.604 3.436A9.878 9.878 0 0 1 0 21.54a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.51 14.009-14.01 0-.213-.004-.426-.014-.637A10.005 10.005 0 0 0 24 4.557z"
+                    />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                      d="M22.225 0H1.771C.791 0 0 .774 0 1.728v20.543C0 23.228.791 24 1.771 24h20.451c.98 0 1.775-.774 1.775-1.728V1.728C24 .774 23.205 0 22.225 0zM7.075 20.452H3.544V9.018h3.531v11.434zM5.31 7.523c-1.13 0-1.965-.847-1.965-1.89 0-1.063.854-1.889 2.009-1.889 1.154 0 1.965.825 1.982 1.889-.007 1.043-.828 1.89-2.026 1.89zm14.287 12.929h-3.523v-5.878c0-1.476-.529-2.483-1.854-2.483-1.012 0-1.617.684-1.883 1.348-.097.234-.121.561-.121.888v6.125H9.687s.047-9.946 0-10.981h3.523v1.555c-.007.012-.017.023-.023.035h.023v-.035c.469-.723 1.302-1.756 3.174-1.756 2.315 0 4.05 1.523 4.05 4.796v6.386z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
