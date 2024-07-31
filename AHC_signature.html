@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Signature</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .signature-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px; /* Optional: For rounded corners */
+        }
+        .signature-header {
+            padding: 20px;
+        }
+        .signature-header p {
+            color: #3a290f;
+            font-size: 12px;
+            font-family: "Rubik", sans-serif;
+            font-weight: 400;
+            margin: 0;
+        }
+        .profile-table {
+            width: 100%;
+            border-spacing: 0;
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .profile-info {
+            font-size: 12px;
+            color: #000;
+        }
+        .profile-info strong {
+            display: block;
+            font-weight: 700;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons img {
+            width: 24px;
+            height: auto;
+            margin: 0 5px;
+        }
+        .contact-info {
+            font-size: 15px;
+            color: #000;
+            margin: 10px 0;
+        }
+        .contact-info img {
+            width: 15px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .contact-info a {
+            color: #0baaa0;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .location {
+            line-height: 1.4;
+            padding-left: 5px;
+        }
+        .footer {
+            background-color: #0baaa0;
+            color: #ffffff;
+            text-align: center;
+            font-size: 10px;
+            padding: 5px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+        }
+        .vertical-line {
+            width: 1px;
+            background-color: #ddd;
+            height: 100px;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 15px;
+        }
+        .contact-column {
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table class="signature-container">
+        <tr>
+            <td class="signature-header">
+                <p>Best Regards,</p>
+                <table class="profile-table">
+                    <tr>
+                        <td>
+                            <img src="ahc_logo.png" alt="logo" class="logo" />
+                        </td>
+                        <td class="vertical-line"></td>
+                        <td>
+                            <p class="profile-info">
+                                John Doe <br />
+                                Web Developer <br />
+                                Department of IT
+                            </p>
+                            <p class="profile-info">
+                                <strong>Alpha Health Consultancy</strong>
+                            </p>
+                            <p class="profile-info">
+                                <strong>GET IN TOUCH</strong>
+                            </p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com" aria-label="Facebook">
+                                    <img src="fb1.png" alt="Facebook" />
+                                </a>
+                                <a href="https://www.instagram.com" aria-label="Instagram">
+                                    <img src="instagram.png" alt="Instagram" />
+                                </a>
+                                <a href="https://www.whatsapp.com" aria-label="WhatsApp">
+                                    <img src="whatsapp.png" alt="WhatsApp" />
+                                </a>
+                                <a href="https://www.twitter.com" aria-label="X">
+                                    <img src="twitter.png" alt="Twitter" />
+                                </a>
+                                <a href="https://www.linkedin.com" aria-label="LinkedIn">
+                                    <img src="linkedin.png" alt="LinkedIn" />
+                                </a>
+                            </div>
+                            <p class="contact-info">
+                                <a href="https://www.alphahmc.com">www.alphahmc.com</a>
+                            </p>
+                        </td>
+                        <td class="contact-column">
+                            <p class="contact-info">
+                                <img src="phone1.png" alt="Phone Icon" />
+                                +94775387845 | +94 67 31 21 859
+                            </p>
+                            <p class="contact-info">
+                                <img src="mail1.png" alt="Mail Icon" />
+                                john@alphatsm.com
+                            </p>
+                            <p class="contact-info">
+                                <img src="loation.png" alt="Location Icon" />
+                                <div class="location; font-size:12px;">
+                                    Alpha Health Consultancy, Alpha Business Complex,<br />
+                                    Main Street Maruthamunai 02, Kalmunai, Sri Lanka
+                                </div>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                Alpha is a DOH, ACTVET Approved, ISO 9001:2015 Certified Organization
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
