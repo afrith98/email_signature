@@ -14,10 +14,14 @@
     "
   >
     <table
-      style="width: 100%; margin-top: 20px; padding: 5px; border-spacing: 0"
+      style="
+        width: 600px; /* Set a fixed width for Gmail compatibility */
+        margin: 20px auto; /* Center the table horizontally */
+        border-spacing: 0;
+      "
     >
       <tr>
-        <td style="width: 60%; padding: 0">
+        <td style="width: 60%; vertical-align: top">
           <table style="width: 100%; border-spacing: 0">
             <tr>
               <td
@@ -62,47 +66,62 @@
               </td>
             </tr>
             <tr>
-              <td style="font-size: 15px">
+              <td style="font-size: 15px; padding-bottom: 5px">
                 <img
                   src="loation.png"
                   alt="Location Icon"
                   style="
                     width: 15px;
                     vertical-align: middle;
-                    margin-right: 5px;
+                    margin-right: 4px;
                     height: auto;
                   "
                 />
-                <span style="display: inline-block; vertical-align: middle">
+                <div
+                  style="
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-align: left;
+                    line-height: 1;
+                    padding-left: 5px;
+                  "
+                >
                   Alpha Health Consultancy, Alpha Business Complex,<br />
                   Main Street Maruthamunai 02, Kalmunai, Sri Lanka
-                </span>
+                </div>
               </td>
             </tr>
           </table>
         </td>
-        <td style="width: 20%; text-align: right; padding: 20px">
-          <img
-            src="https://afrith98.github.io/email_signature/CB%20Logo.png"
-            alt="CB Logo"
-            width="130"
-            height="auto"
-          />
+        <td style="width: 20%; text-align: right; vertical-align: top">
+          <table style="width: 100%; border-spacing: 0">
+            <tr>
+              <td style="text-align: right; padding-bottom: 10px">
+                <img
+                  src="https://afrith98.github.io/email_signature/CB%20Logo.png"
+                  alt="CB Logo"
+                  width="130"
+                  height="auto"
+                />
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
+
     <table
       style="
-        width: 100%;
+        width: 600px; /* Match the width for the footer */
         background: linear-gradient(135deg, #384e58, #bd5744);
-        margin-top: 10px;
+        margin: 10px auto;
         padding: 10px 0;
         text-align: center;
         border-spacing: 0;
       "
     >
       <tr>
-        <td style="color: #fff; padding: 5px">
+        <td style="color: #fff; padding: 5px; text-align: left; width: 50%">
           <a
             href="https://www.charteredbureau.lk"
             style="
@@ -116,7 +135,9 @@
           >
             www.charteredbureau.lk
           </a>
-          <div style="margin-bottom: 10px">
+        </td>
+        <td style="color: #fff; padding: 5px; text-align: right; width: 50%">
+          <div>
             <a
               href="https://www.facebook.com"
               aria-label="Facebook"
@@ -172,9 +193,6 @@
                 style="width: 24px; height: auto"
               />
             </a>
-          </div>
-          <div style="font-size: 14px; margin-top: 5px">
-            © 2024 Chartered Bureau. All rights reserved.
           </div>
         </td>
       </tr>
